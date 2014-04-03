@@ -60,7 +60,7 @@ bool init() {
 bool loadMedia() {
   bool success = true;
   
-  gSplash = SDL_LoadBMP("splash.bmp");
+  gSplash = SDL_LoadBMP("../media/splash.bmp");
   if(gSplash == nullptr) {
     cerr << "Failed to load image: " << SDL_GetError() << endl;
     success = false;
